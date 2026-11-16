@@ -25,6 +25,36 @@
 .tag{background:#4f2c3e;border-color:#976477}
 .mobile-nav{background:rgba(30,19,29,.96)}
 .nav button.active{background:linear-gradient(110deg,#61384c,#332131);border-color:#9e6a7e}
+
+/* VELVET premium consistency pass: all five screens */
+:root{--velvet-gradient:radial-gradient(ellipse at 84% 6%,rgba(168,88,119,.36),transparent 55%),linear-gradient(125deg,#321d2d 0%,#512b40 62%,#2b1b29 100%);--velvet-outline:#88566d;--velvet-shadow:0 13px 35px rgba(0,0,0,.29),inset 0 1px rgba(255,230,224,.07)}
+.hero,.card,.panel,.panel.deep,.entry{background:var(--velvet-gradient);border-color:var(--velvet-outline);box-shadow:var(--velvet-shadow)}
+.hero{box-shadow:0 20px 60px #0005,inset 0 1px rgba(255,233,222,.1)}
+.card,.entry,.panel{transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease}
+.card:hover,.entry:hover{border-color:#c394a3;box-shadow:0 16px 42px rgba(0,0,0,.35),inset 0 1px rgba(255,232,227,.1)}
+.card:focus-visible,.entry button:focus-visible,.secondary:focus-visible,.primary:focus-visible,.chip:focus-visible,.nav button:focus-visible,.mobile-nav button:focus-visible{outline:2px solid #f0c88f;outline-offset:3px}
+.panel h3,.entry h3,.card h3{color:#fff0e8}
+.card p,.entry p,.panel .muted{color:#dcc4cc}
+.card-icon,.entry small,.eyebrow{color:#efd0a0}
+.primary{background:linear-gradient(125deg,#f0d5ad,#cc9f67);box-shadow:0 5px 17px #0003}
+.primary:hover{filter:brightness(1.07)}
+.secondary{background:linear-gradient(125deg,#65364e,#43283a);border:1px solid #aa7487;box-shadow:inset 0 1px rgba(255,231,227,.08)}
+.secondary:hover{border-color:#d5a2a7;background:linear-gradient(125deg,#754057,#513045)}
+.search{background:linear-gradient(125deg,#4b293c,#321f2e);border-color:#936176;box-shadow:inset 0 1px rgba(255,230,225,.06)}
+.search:focus-within{border-color:#e2b993;box-shadow:0 0 0 2px rgba(226,185,147,.18)}
+.chip{background:#47283a;border-color:#8a596e;color:#f1dbe1}
+.chip:hover,.chip.on{background:#76445e;border-color:#ddb399;color:#fff1e9}
+.interest button{background:#4d2b40;border-color:#95637a;color:#f4e0e3}
+.interest button.selected{background:linear-gradient(125deg,#8b4b66,#663850);border-color:#e4bb92;color:#fff6e9}
+.nav button.active{background:linear-gradient(110deg,#6a3a53,#382436);border-color:#ac758b;box-shadow:inset 3px 0 #e1bd88}
+.circle{background:linear-gradient(135deg,#764259,#3d2739);border-color:#bd8592}
+.mobile-nav{background:rgba(28,18,27,.97);border-top:1px solid #80546b}
+.mobile-nav button.active{color:#f0cc95}
+.modal{background:var(--velvet-gradient);border-color:#9d657d}
+.empty{background:linear-gradient(130deg,#392334,#281d2b);border-color:#8e5c71;color:#ebd0d9}
+.notice{border-left-color:#eac393;color:#e1cbd0}
+@media(max-width:740px){.hero,.card,.panel,.entry{border-radius:17px}.content{padding-bottom:calc(105px + env(safe-area-inset-bottom))}.mobile-nav button{min-height:44px}}
+@media(prefers-reduced-motion:reduce){.card,.entry,.panel{transition:none}}
 </style></head>
 <body class="locked">
 <div class="shell"><aside class="sidebar"><div class="brand">VELVET</div><div class="kicker">The private collection</div><nav class="nav" id="sidenav"></nav><div class="side-bottom">◈ &nbsp; Your space, your pace.<br>Private by design.<br><span style="color:#d1b089">Adults 18+ only</span></div></aside>
